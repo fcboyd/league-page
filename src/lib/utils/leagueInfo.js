@@ -69,10 +69,10 @@ export const managers = [
     //   "tradingScale": 10, // 1 - 10
     //   "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
     // },
-    // {
+     {
        "roster": 3,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-    //   "name": "Forrest Boyd",
-    //   "tookOver": 2020, // (optional) used if a manager took over a team, delete this line or change to null otherwise
+       "name": "Forrest Boyd",
+       "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Birmingham, AL", // (optional)
        "bio": "yo listen up here's a story about a little guy that lives in a colorless  world and all day and all night and everything he sees is just colorless like him inside and outside colorless his house with a colorless little window and a colorless corvette and everything is colorless for him and hisself and everybody around cos he ain't got nobody to listen to i'm colorblind da ba dee da ba die...",
     //   "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
