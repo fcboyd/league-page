@@ -49,7 +49,7 @@ export const managers = [
      },
      {
        "roster": 2,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
-       "name": "Matt Wigtail",
+       "name": "Matt Wigtil",
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Houston, TX", // (optional)
        "bio": "Lorem ipsum...",
