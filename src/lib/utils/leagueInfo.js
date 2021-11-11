@@ -95,21 +95,21 @@ export const managers = [
        "roster": 4,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "Micah Wolters",
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
-       "location": "Dallas, TX", // (optional)
-       "bio": "I'm from Ouagadougou, Burkina Faso and like the Eagles even though they suck ",
+       "location": "Mansfield, TX", // (optional)
+       "bio": "I did not trade Najee for Saquan ",
        "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
-       "fantasyStart": 1897, // (optional) when did the manager start playing fantasy football
+       "fantasyStart": 2012, // (optional) when did the manager start playing fantasy football
        "favoriteTeam": "phi", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
        "mode": "Win Now", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
        "rival": {
-         name: "Wiggy", // Can be anything (usually your rival's name)
-         link: 2, // manager array number within this array, or null to link back to all managers page
+         name: "TBD", // Can be anything (usually your rival's name)
+         link: null, // manager array number within this array, or null to link back to all managers page
          image: "/managers/rival.jpg", // either a specific manager photo or '/managers/everyone.png' or '/managers/question.png'
        },
-       "favoritePlayer": 917, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
-       "valuePosition": "WR", // (optional) Favorite position (QB, WR, RB, TE, etc.)
-       "rookieOrVets": "Rookies", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
-       "philosophy": "Only Eagles",
+       "favoritePlayer": 7525, // (optional) this corresponds to the Sleeper player ID (https://api.sleeper.app/v1/players/nfl)
+       "valuePosition": "RB", // (optional) Favorite position (QB, WR, RB, TE, etc.)
+       "rookieOrVets": "Vets", // (optional) 'Rookies' or 'Vets' (anything else and you will need to add a new png to /static/ similar to the 'Rookies.png' and 'Vets.png' currently in there)
+       "philosophy": "F*** them picks",
        "tradingScale": 7, // 1 - 10
        "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
      },
