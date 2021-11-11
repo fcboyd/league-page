@@ -157,7 +157,7 @@ export const managers = [
        "tradingScale": 7, // 1 - 10
        "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
      },
-    {
+     {
        "roster": 7,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "TimTom Welsh",
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
@@ -179,7 +179,7 @@ export const managers = [
        "tradingScale": 7, // 1 - 10
        "preferredContact": "Carrier Pigeon", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
      },
-    {
+     {
        "roster": 8,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "Sabino",
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
@@ -201,7 +201,7 @@ export const managers = [
        "tradingScale": 7, // 1 - 10
        "preferredContact": "Text", // 'Text', 'WhatsApp', 'Sleeper', 'Email', 'Phone', 'Discord', and 'Carrier Pigeon' are currently supplied in the template
      },
-    {
+     {
        "roster": 9,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "JC",
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
