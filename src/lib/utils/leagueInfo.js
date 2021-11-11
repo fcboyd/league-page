@@ -227,7 +227,7 @@ export const managers = [
        "roster": 10,  // ID of the roster that the manager manages (look at the order of the power rankings graph)
        "name": "Tyler",
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
-       "location": "Tradesville, USA, // (optional)
+       "location": "Tradesville, USA", // (optional)
        "bio": "sjcksjndckjsd",
        "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
        "fantasyStart": 2019, // (optional) when did the manager start playing fantasy football
