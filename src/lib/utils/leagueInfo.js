@@ -75,7 +75,7 @@ export const managers = [
        "tookOver": 2021, // (optional) used if a manager took over a team, delete this line or change to null otherwise
        "location": "Birmingham, AL", // (optional)
        "bio": "yo listen up here's a story about a little guy that lives in a colorless  world and all day and all night and everything he sees is just colorless like him inside and outside colorless his house with a colorless little window and a colorless corvette and everything is colorless for him and hisself and everybody around cos he ain't got nobody to listen to i'm colorblind da ba dee da ba die...",
-       "photo": "/managers/name.jpg", // square ratio recommended (no larger than 500x500)
+       "photo": "/managers/IMG954485.jpg", // square ratio recommended (no larger than 500x500)
        "fantasyStart": 2011, // (optional) when did the manager start playing fantasy football
        "favoriteTeam": "pit", // (optional) favorite NFL team, (follows convention: nyj, sea, mia, etc.) MUST BE LOWERCASE
        "mode": "Dynasty", // (optional) 'Win Now', 'Dynasty', or 'Rebuild' (anything else and you will need to add a new png to /static/ similar to the 'Rebuild.png' and 'Win Now.png' currently in there)
