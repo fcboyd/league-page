@@ -4,6 +4,22 @@ import { dynasty } from './utils/helper';
 
     const today = new Date();
     const resources = [
+         {
+            name: "KeepTradeCut Trade Calculator",
+            url: "https://keeptradecut.com/trade-calculator",
+            icon: "calculate",
+            premium: false,
+            separator: true,
+            dynastyOnly: true,
+        },
+         {
+            name: "Dynasty Rankings",
+            url: "http://dynastyranker.com/Sleeper/DisplayLeague?LeagueID=728358985085902848",
+            icon: "assessment",
+            premium: false,
+            separator: true,
+            dynastyOnly: true,
+        },
         {
             name: "FTN Fantasy",
             url: "https://www.ftnfantasy.com/nfl",
