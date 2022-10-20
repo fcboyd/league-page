@@ -4,7 +4,7 @@
 
 <script>
     import { dues } from '$lib/utils/helper';
-    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree;
+    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree, oneFour;
     let two, twoOne, twoTwo, twoThree;
     let three, threeOne;
     let four, fourOne, fourTwo;
@@ -114,6 +114,7 @@
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoFour)}>1.2.4 Trade Restrictions</h5>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoFive)}>1.2.5 Veto/Trade Process</h5>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneThree)}>1.3 Waiver Wire</h4>
+	<h4 class="noUnderscore clickable" on:click={() => goToSection(oneFour)}>1.4 Taxi Squad</h4>
     
     <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Section 2: Drafting</h3>
     
@@ -166,11 +167,12 @@
         <li>TE</li>
         <li>FLEX (RB/WR/TE)</li>
         <li>FLEX (RB/WR/TE)</li>
+	<li>SUPERFLEX (QB/RB/WR/TE)</li>
     </ul>
     
-    <p>16 Bench (Expanded by 5 between the keague draft and start of regular season)</p>
+    <p>16 Bench</p>
 
-    <p>2 IR Spots (Player must be labeled as IR, Out, or Covid in the Sleeper App)</p>
+    <p>3 IR Spots (Player must be labeled as IR, Out, Sus, or Covid in the Sleeper App)</p>
     
         <h4 bind:this={oneOneOne}>1.1.1 Position Maximums</h4>
         
@@ -186,14 +188,21 @@
 
     <h3 class="subSectionHeading" bind:this={oneTwo}>1.2 Trading</h3>
     
-    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Trades will process immediately and will be reversed if vetoed or under investigation for collusion. Tradable assets include players, draft picks, and FAAB $.</p>
+    <p>Trading of players and draft picks (up to 3 drafts away) are allowed. Tradable assets include players, draft picks, and FAAB $.</p>
     
+	<p>Trades will process immediately (as the commissioner is available to push them through) and may only be reversed under the following circumstances:</p>
+	<ul>
+		<li> 1. Within a resonable time frame (within 15) a participant in the trade notifies the league that the acceptance was in error (wrong trade clicked on, intended to decline, etc.) </li>
+		<li> 2. The trade was made with significant misinformation involved (when only 1 owner knew of an injury, etc.)</li>
+		<li> 3. If vetoed or under investigation for collusion.</li>
+	</ul>
+	
     <h4 bind:this={oneTwoOne}>1.2.1 Trade Collusion</h4>
     <div class="subBlock">
-        <p>If any owners are suspected of accepting bribes/offering bribes to enhance their/another owners team via trade, trading any assets other than fantasy players, draft picks, FAAB $, or otherwise found guilty of engaging in any form of collusion*, all parties involved in the trade will be susceptible to punishment. The punishments will go as followed:</p>
+        <p>If any owners are suspected of accepting bribes/offering bribes to enhance their/another owners team via trade (including a conditional trade or promise of a future trade), trading any assets other than fantasy players, draft picks, FAAB $, or otherwise found guilty of engaging in any form of collusion*, all parties involved in the trade will be susceptible to punishment. The punishments will go as followed:</p>
         
         <ul>
-            <li>First Offense – Immediate reduction of FAAB budget by 80%</li>
+            <li>First Offense – Immediate reduction of FAAB budget by 80% (i.e. $80)</li>
             <li>Second Offense – Immediate freeze on all transaction types for the next 18 weeks of regular season and playoff fantasy football games, including trades and waiver wire bids</li>
             <li>Third Offense – A league meeting of all members not involved in any of the improper trades/activity in question will take place to discuss next steps.</li>
         </ul>
@@ -207,7 +216,7 @@
 
     <h4 bind:this={oneTwoTwo}>1.2.2 Lending Players Prohibition</h4>
     <div class="subBlock">
-        <p>REVIEW: Any player traded from a team may not be re-acquired via trade within 6 weeks of the original trade. Any teams involved in this behavior will be subject to the aforementioned collusion punishments.</p>
+        <p>REVIEW: Any player traded from a team may not be re-acquired via trade within 6 weeks of the original trade without valid reason and fair value. Any teams involved in this behavior will be subject to the aforementioned collusion punishments.</p>
     </div>
     
     <h4 bind:this={oneTwoThree}>1.2.3 Trade Deadline</h4>
@@ -229,19 +238,27 @@
     
     <h3 bind:this={oneThree}>1.3 Waiver Wire</h3>
     
-    <p>FAAB Waiver wire system. Each team will begin the season with $100. $0 bids are allowed. Bids will process Tuesdays and 3AM EST.</p>
+    <p>FAAB Waiver wire system. Each team will begin the season with $100. $0 bids are allowed. Bids will process Tuesdays and 6AM EST.</p>
 
-    <p>FAAB budgets will reset each season in January.</p>
+    <p>FAAB budgets will reset each season in January and again at the start of Week 1 of the NFL season.</p>
     
+	
+	<h3 bind:this={oneFour}>1.4 Taxi Squad</h3>
     
-    <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
+    <p>Taxi squads are intended to provide roster space for rookies and first or second year developmental players. Following the startup draft, only new rookies may be added to the taxi squad. Players previously on the taxi squad may remain until the end of their second NFL season.</p>
+
+    <p>Each team will receive 3 taxi spots. Upon season start, the taxi squad is locked. Once a player has been promoted from the taxi squad, they are not allowed to return. A rostered player will likely need to be dropped to make room for the taxi promotion. If a rookie is picked up on waivers after taxi squads are locked, they are not taxi squad eligible. If players on each team's taxi squad are included in a trade, they may be placed on the taxi squad of their new roster.</p>
+    
+   
+	
+<h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
     
     <h3 bind:this={twoOne}>2.1 Draft Order</h3>
-    <p>The draft order each year will be a linear draft in reverse order of the previous year’s regular season standings.</p>
+    <p>The draft order each year will be a linear draft in reverse order of the previous year’s regular season standings. In 2023 this will move to Maximum Potetial Points For as the deciding order for non-playoff teams, will playoff performance (reverse final standings) determining the order for playoff teams.</p>
 
     <h3 bind:this={twoTwo}>2.2 Rookie Drafts</h3>
-    <p>Rokkie drafts will consist of 3 round of drafting, with 5 minutes alotted for each pick. To make room for the incoming players, benches will be expanded by (5) spots. These spots will be removed in mid-August, at which point you will need to have cut the necessary players.</p>
-    <p>Any spots not filled during the draft, can be filled immediately afterwards from the waiver wire.</p>
+    <p>Rokkie drafts will consist of 4 round of drafting, with 12 hours alotted for each pick. Benches will not be expanded, requiring owners to drop players to reach roster maximums following the draft.</p>
+	<p>Any spots not filled during the draft, can be filled immediately afterwards from the waiver wire.</p>
     
     <h3 bind:this={twoThree}>2.3 Draft Day Trades</h3>
     <p>If a trade is being made during the draft, one or both parties can alert the commissioner to pause the draft to allow for extra time to negotiate the trade.</p>
@@ -276,10 +293,10 @@
     <h2 class="sectionHeading" bind:this={six}>Section 6 Replacing Managers</h2>
     
     <h3 bind:this={sixOne}>6.1 Removing Managers</h3>
-    <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation, through the league chat, trade offers, and the waiver wire, is strongly encouraged but generally grounds for removal.</p>
+    <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation through the league chat, trade offers, and the waiver wire, is strongly encouraged but failing to do so is not generally grounds for removal.</p>
     
     <h3 bind:this={sixTwo}>6.2 Replacing Managers</h3>
-    <p>When a manager needs to be replaced, the commisiooners will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to take on a dynasty commitment and will be very active within the league.</p>
+    <p>When a manager needs to be replaced, the commisioner(s) will try to find a suitable candidate with some connection to at least a portion of the existing managers. Priority will be placed on managers who are eager to take on a dynasty commitment and will be very active within the league. As needed, new manager candidates may be asked to go through an audition process and/or panel interview.</p>
     
     <h3 bind:this={sixThree}>6.3 Replacement Incentive</h3>
     <p>In the event that a manager chooses to quit the league or is removed by a comissioner, an incoming manager is offered a 50% reductioon on their first year buy-in.</p>
